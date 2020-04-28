@@ -27,13 +27,9 @@ class SuperFooter extends Component {
 						<img
 							className="pic"
 							src={logo}
-							width="60px"
-							height="60px"
+							width="135px"
+							height="135px"
 						/>
-						<div className="label">
-							<div className="top">ТАВРИДА МЕДИА</div>
-							<div className="bottom">РЕКЛАМНОЕ АГЕНСТВО</div>
-						</div>
 					</a>
 					<div className="left-col col">
 						<a className="col-link" href="vk.com">
