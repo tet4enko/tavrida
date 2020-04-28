@@ -102,7 +102,10 @@ class Header extends Component {
 									<span className="point blue"></span>
 									Полиграфия
 								</a>
-								<a href="https:vk.com/" className="menu-item">
+								<a
+									href="/uslugi/suvenirka"
+									className="menu-item"
+								>
 									<span className="point yellow"></span>
 									Сувенирная продукция
 								</a>

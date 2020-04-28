@@ -1,8 +1,8 @@
 .Polygraphy::before,
 .Polygraphy::after {
-	border-color: #2586e2;
+	border-color: var(--blue);
 }
 
 .Polygraphy .baloon {
-	background: #2586e2;
+	background: var(--blue);
 }

@@ -10,6 +10,7 @@ import SuperFooter from "./../common/SuperFooter/SuperFooter.js";
 import General from "./../pages/general";
 import Outdoor from "./../pages/outdoor";
 import Polygraphy from "./../pages/polygraphy";
+import Suvenirka from "./../pages/suvenirka";
 
 function App() {
 	return (
@@ -23,6 +24,10 @@ function App() {
 					<Route path="/uslugi/polygraphy">
 						<Header general={false} />
 						<Polygraphy />
+					</Route>
+					<Route path="/uslugi/suvenirka">
+						<Header general={false} />
+						<Suvenirka />
 					</Route>
 					<Route path="/">
 						<Header general={true} />
