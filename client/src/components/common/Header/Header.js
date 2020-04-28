@@ -88,11 +88,17 @@ class Header extends Component {
 									this.onServivesPopupMouseOut()
 								}
 							>
-								<a href="https:vk.com/" className="menu-item">
+								<a
+									href="/uslugi/naruzhnaya-reklama"
+									className="menu-item"
+								>
 									<span className="point orange"></span>
 									Наружная реклама
 								</a>
-								<a href="https:vk.com/" className="menu-item">
+								<a
+									href="/uslugi/polygraphy"
+									className="menu-item"
+								>
 									<span className="point blue"></span>
 									Полиграфия
 								</a>
