@@ -38,7 +38,7 @@ app.use(compression())
 		res.send("Pong! ").end();
 	})
 
-	.get("/", (req, res) => {
+	.get("/*", (req, res) => {
 		res.sendFile(path.join(__dirname, "client/build/index.html"));
 	});
 
