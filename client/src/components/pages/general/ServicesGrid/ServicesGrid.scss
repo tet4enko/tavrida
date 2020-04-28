@@ -1,0 +1,40 @@
+.ServicesGrid {
+	display: inline-block;
+
+	.lines {
+		.line {
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+
+			margin-bottom: 52px;
+
+			.item {
+				position: relative;
+
+				padding-bottom: 50px;
+
+				img {
+					height: 10vw;
+					min-height: 156px;
+				}
+
+				.label {
+					position: absolute;
+
+					left: -50px;
+					right: -50px;
+
+					text-align: center;
+
+					margin-top: 15px;
+
+					font-size: 18px;
+					font-weight: bold;
+
+					color: var(--main-header-color);
+				}
+			}
+		}
+	}
+}

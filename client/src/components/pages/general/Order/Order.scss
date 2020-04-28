@@ -1,0 +1,45 @@
+.Order {
+	.content {
+		height: 25vw;
+		min-height: 300px;
+
+		position: relative;
+
+		background-image: url("./Chuvak.png");
+		background-repeat: no-repeat;
+		background-size: contain;
+		background-position-x: 70%;
+
+		button {
+			position: absolute;
+
+			left: 22%;
+			top: 0;
+			bottom: 0;
+
+			margin: auto;
+
+			height: fit-content;
+
+			font-size: 3.2vw;
+
+			padding: 25px;
+
+			border-radius: 24px;
+
+			font-family: GlebastaFontBig;
+
+			color: #fbca0e;
+
+			background: linear-gradient(180deg, #001c70 0%, #0c0047 100%);
+
+			cursor: pointer;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.Order .content button {
+		font-size: 38.5px;
+	}
+}

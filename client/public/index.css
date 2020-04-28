@@ -1,0 +1,14 @@
+@font-face {
+	font-family: "GlebastaFont";
+	src: url(./fonts/century_gothic.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: "GlebastaFontBig";
+	src: url(./fonts/big.ttf) format("truetype");
+}
+
+@font-face {
+	font-family: "GlebastaExtraBold";
+	src: url(./fonts/Geometria-ExtraBold.ttf) format("truetype");
+}
