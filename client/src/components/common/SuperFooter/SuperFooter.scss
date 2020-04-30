@@ -1,7 +1,7 @@
 .SuperFooter {
 	position: relative;
 
-	height: 270px;
+	height: 340px;
 
 	background: linear-gradient(
 		180deg,
@@ -24,6 +24,88 @@
 
 		display: inline-block;
 
+		.col {
+			position: absolute;
+
+			color: #fff;
+
+			&.left {
+				left: 80px;
+			}
+
+			&.center {
+				left: 500px;
+			}
+
+			&.right {
+				left: 900px;
+			}
+		}
+
+		.colbottom {
+			top: 130px;
+
+			display: flex;
+
+			align-items: center;
+
+			a {
+				color: #fff;
+
+				text-decoration: none;
+			}
+
+			img {
+				margin-right: 20px;
+			}
+
+			&.mail {
+				font-size: 18px;
+			}
+
+			&.time {
+				font-size: 22px;
+			}
+
+			&.callback .btn {
+				padding: 11px 20px;
+				font-size: 23px;
+				border-radius: 16px;
+
+				background-color: #fbca0e;
+				color: var(--main-header-color);
+			}
+		}
+
+		.coltop {
+			top: 47px;
+
+			.rabotnik {
+				display: flex;
+
+				.info {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: flex-start;
+
+					margin-left: 20px;
+
+					.position {
+						font-size: 16px;
+					}
+
+					.tel {
+						font-size: 21px;
+
+						text-decoration: none;
+
+						color: #fff;
+					}
+				}
+			}
+		}
+
 		.copyright {
 			position: absolute;
 
@@ -40,161 +122,28 @@
 			font-size: 15px;
 		}
 
-		.logo {
+		.social {
 			position: absolute;
+			left: 0;
+			right: 0;
 
-			bottom: 89px;
-			left: 122px;
+			margin: auto;
 
-			color: #fff;
+			bottom: 50px;
 
-			z-index: 2;
+			.text {
+				color: #fff;
 
-			display: flex;
-			align-items: center;
-			justify-content: center;
-
-			text-decoration: none;
-
-			.label {
-				font-size: 14px;
-
-				display: inline-block;
-
-				margin-left: 15px;
-
-				.top {
-					font-size: 32px;
-
-					font-family: GlebastaFontBig;
-				}
-			}
-		}
-
-		.col {
-			position: absolute;
-			bottom: 110px;
-
-			z-index: 2;
-
-			text-align: left;
-
-			&.contacts {
-				bottom: 48px;
-			}
-		}
-
-		.left-col {
-			left: 408px;
-		}
-
-		.right-col {
-			left: 622px;
-		}
-
-		.left-col a,
-		.right-col a {
-			display: block;
-
-			text-decoration: none;
-
-			color: #fff;
-
-			font-size: 25px;
-
-			margin-bottom: 10px;
-		}
-
-		.contacts {
-			right: 60px;
-
-			.top {
-				display: flex;
-
-				margin-bottom: 15px;
-
-				.pics {
-					border-right: 1px solid #fff;
-
-					padding-right: 10px;
-
-					display: flex;
-					flex-direction: column;
-					align-items: center;
-					justify-content: space-around;
-
-					.pic {
-						display: block;
-					}
-				}
-
-				.links {
-					color: #fff;
-
-					margin-left: 20px;
-
-					.tel-wrapper {
-						.label {
-							white-space: nowrap;
-						}
-
-						.tel {
-							color: #fff;
-
-							text-decoration: none;
-						}
-
-						&.first {
-							.label {
-								font-size: 13px;
-							}
-
-							.tel {
-								font-size: 15px;
-							}
-						}
-
-						&.second {
-							.label {
-								font-size: 13px;
-							}
-
-							.tel {
-								font-size: 16px;
-							}
-						}
-
-						&.thirth {
-							.label {
-								font-size: 12px;
-							}
-
-							.tel {
-								font-size: 15px;
-							}
-						}
-					}
-
-					.email {
-						color: #fff;
-
-						text-decoration: none;
-
-						margin-top: 10px;
-
-						display: inline-block;
-
-						font-size: 14px;
-					}
-				}
+				font-family: GlebastaFontBig;
+				font-size: 26px;
 			}
 
-			.bottom {
-				text-align: center;
+			.icons {
+				margin-top: 10px;
+			}
 
-				a {
-					margin: 0 10px;
-				}
+			.icon {
+				margin: 0 10px;
 			}
 		}
 	}
