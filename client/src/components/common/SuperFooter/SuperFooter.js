@@ -63,7 +63,7 @@ class SuperFooter extends Component {
 				<div className="rabotnik">
 					<img src={icon} height={iconSize} />
 					<div className="info">
-						<div className="position">{position}</div>
+						<div className="position">{`${position}:`}</div>
 						<a
 							className="tel"
 							itemProp="telephone"
