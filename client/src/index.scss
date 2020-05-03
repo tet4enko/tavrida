@@ -111,4 +111,16 @@ button {
 	font-family: GlebastaFontBig;
 
 	cursor: pointer;
+
+	&.blue {
+		color: #fff;
+
+		background-color: var(--main-header-color);
+	}
+
+	&.yellow {
+		color: var(--main-header-color);
+
+		background-color: #fbca0e;
+	}
 }

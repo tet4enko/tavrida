@@ -12,3 +12,8 @@
 	font-family: "GlebastaExtraBold";
 	src: url(./fonts/Geometria-ExtraBold.ttf) format("truetype");
 }
+
+@font-face {
+	font-family: "GlebastaBetina";
+	src: url(./fonts/12003.otf) format("opentype");
+}

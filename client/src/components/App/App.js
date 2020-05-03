@@ -11,6 +11,7 @@ import General from "./../pages/general";
 import Outdoor from "./../pages/outdoor";
 import Polygraphy from "./../pages/polygraphy";
 import Suvenirka from "./../pages/suvenirka";
+import Cleaning from "./../pages/cleaning";
 
 function App() {
 	return (
@@ -28,6 +29,10 @@ function App() {
 					<Route path="/uslugi/suvenirka">
 						<Header general={false} />
 						<Suvenirka />
+					</Route>
+					<Route path="/uslugi/cleaning">
+						<Header general={false} />
+						<Cleaning />
 					</Route>
 					<Route path="/">
 						<Header general={true} />
