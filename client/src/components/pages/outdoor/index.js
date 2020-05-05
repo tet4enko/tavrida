@@ -3,17 +3,17 @@ import React from "react";
 import ServiceCaption from "./../../common/ServiceCaption/ServiceCaption.js";
 import ServicesSlider from "./../../common/ServicesSlider/ServicesSlider.js";
 import ServiceList from "./../../common/ServiceList/ServiceList.js";
-import Zamer from "./Zamer/Zamer.js";
+import Zamer from "./../../common/Zamer/Zamer.js";
 
 import "./index.scss";
 
-import lightbox from "./pics/Лайтбокс.png";
-import liters from "./pics/Буквы.png";
-import banner from "./pics/Баннер.png";
-import plenka from "./pics/Пленка.png";
-import auto from "./pics/Авто.png";
-import wall from "./pics/Бренд волл.png";
-import shtender from "./pics/Штендер.png";
+import lightbox from "./pics/1.png";
+import liters from "./pics/2.png";
+import banner from "./pics/3.png";
+import plenka from "./pics/4.png";
+import auto from "./pics/5.png";
+import wall from "./pics/6.png";
+import shtender from "./pics/7.png";
 
 const loremIpsum =
 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.";
@@ -70,7 +70,7 @@ const services = [
 	}
 ];
 
-export default () => {
+const component = () => {
 	return (
 		<div className="Outdoor page-wrapper page-content service-page-type-1">
 			<ServiceCaption
@@ -91,3 +91,5 @@ export default () => {
 		</div>
 	);
 };
+
+export { component, services };

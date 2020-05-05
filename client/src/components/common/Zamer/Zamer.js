@@ -9,7 +9,7 @@ export default props => {
 		<div className="Zamer section">
 			<div className="top">
 				<div className="left">
-					<h2 className="caption1">Нужна наружка?</h2>
+					<h2 className="caption1">Нужна наружная реклама?</h2>
 					<span className="caption2">
 						<sup>*</sup>Закажи <b>бесплатный</b> вызов замерщика
 					</span>

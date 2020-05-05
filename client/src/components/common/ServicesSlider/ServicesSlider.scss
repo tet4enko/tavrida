@@ -99,28 +99,5 @@
 			right: 0;
 			bottom: 15px;
 		}
-
-		.toggle_btn {
-			width: 40px;
-			height: 40px;
-
-			border: none;
-
-			border-radius: 100%;
-
-			background-repeat: no-repeat;
-			background-size: contain;
-
-			cursor: pointer;
-
-			&.left {
-				margin-right: 20px;
-				background-image: url("./pics/Кнопка1.png");
-			}
-
-			&.right {
-				background-image: url("./pics/Кнопка2.png");
-			}
-		}
 	}
 }

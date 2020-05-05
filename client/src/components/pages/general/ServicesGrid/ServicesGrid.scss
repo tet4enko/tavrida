@@ -2,6 +2,11 @@
 	display: inline-block;
 
 	.lines {
+		background: url("./img/TM.png");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 39%;
+
 		.line {
 			display: flex;
 			justify-content: space-evenly;
@@ -33,6 +38,29 @@
 					font-weight: bold;
 
 					color: var(--main-header-color);
+
+					.point {
+						width: 11px;
+						height: 11px;
+
+						display: inline-block;
+
+						border-radius: 100%;
+
+						margin-right: 10px;
+
+						&.orange {
+							background: var(--orange);
+						}
+
+						&.blue {
+							background: var(--blue);
+						}
+
+						&.yellow {
+							background: var(--yellow);
+						}
+					}
 				}
 			}
 		}

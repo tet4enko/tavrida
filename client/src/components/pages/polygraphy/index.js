@@ -6,14 +6,14 @@ import ServiceList from "./../../common/ServiceList/ServiceList.js";
 
 import "./index.scss";
 
-import vizitki from "./pics/Визитки.png";
-import flaera from "./pics/Флаера.png";
-import plenka from "./pics/Пленка.png";
-import cards from "./pics/Карты.png";
-import calendars from "./pics/Календарь.png";
-import notedaps from "./pics/Блокнот.png";
-import paketi from "./pics/Пакет.png";
-import upakovki from "./pics/Упаковка.png";
+import vizitki from "./pics/1.png";
+import flaera from "./pics/2.png";
+import plenka from "./pics/3.png";
+import cards from "./pics/4.png";
+import calendars from "./pics/5.png";
+import notedaps from "./pics/6.png";
+import paketi from "./pics/7.png";
+import upakovki from "./pics/8.png";
 
 const loremIpsum =
 	"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.";
@@ -77,7 +77,7 @@ const services = [
 	}
 ];
 
-export default () => {
+const component = () => {
 	return (
 		<div className="Polygraphy page-wrapper page-content service-page-type-1">
 			<ServiceCaption caption="полиграфия" description="" />
@@ -88,3 +88,5 @@ export default () => {
 		</div>
 	);
 };
+
+export { component, services };

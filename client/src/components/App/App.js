@@ -8,9 +8,9 @@ import Header from "./../common/Header/Header";
 import SuperFooter from "./../common/SuperFooter/SuperFooter.js";
 
 import General from "./../pages/general";
-import Outdoor from "./../pages/outdoor";
-import Polygraphy from "./../pages/polygraphy";
-import Suvenirka from "./../pages/suvenirka";
+import { component as Outdoor } from "./../pages/outdoor";
+import { component as Polygraphy } from "./../pages/polygraphy";
+import { component as Suvenirka } from "./../pages/suvenirka";
 import Cleaning from "./../pages/cleaning";
 
 function App() {

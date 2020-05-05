@@ -2,9 +2,14 @@ import React, { Component } from "react";
 import "./ServicesGrid.scss";
 
 const images = [];
+const hoveredImages = [];
 
 for (let i = 1; i <= 7; i++) {
 	images.push(require(`./img/${i}.png`));
+}
+
+for (let i = 1; i <= 7; i++) {
+	hoveredImages.push(require(`./img/hover/${i}.png`));
 }
 
 const line1 = [
@@ -23,13 +28,29 @@ const line2 = [
 class ServicesGrid extends Component {
 	constructor(props) {
 		super(props);
+
+		this.state = {
+			hovered: null
+		};
 	}
 
 	render() {
+		const _self = this;
+
 		const gridItem = data => {
 			return (
-				<div className="item">
-					<img src={images[data.img - 1]}></img>
+				<div
+					className="item"
+					onMouseOver={() => _self.setState({ hovered: data.img })}
+					onMouseOut={() => _self.setState({ hovered: null })}
+				>
+					<img
+						src={
+							_self.state.hovered === data.img
+								? hoveredImages[data.img - 1]
+								: images[data.img - 1]
+						}
+					></img>
 					<div className="label">
 						<span className={`point ${data.color}`}></span>
 						{data.label}

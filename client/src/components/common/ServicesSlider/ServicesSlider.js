@@ -2,6 +2,8 @@ import React from "react";
 
 import "./ServicesSlider.scss";
 
+import Toggle from "./../Toggle";
+
 let interval;
 
 export default props => {
@@ -59,14 +61,8 @@ export default props => {
 					<img src={services[index].pic} />
 				</div>
 				<div className="toggle_slide">
-					<button
-						className="left toggle_btn"
-						onClick={() => toggle("left")}
-					/>
-					<button
-						className="right toggle_btn"
-						onClick={() => toggle()}
-					/>
+					<Toggle side="left" onClick={() => toggle("left")} />
+					<Toggle side="right" onClick={() => toggle()} />
 				</div>
 			</div>
 		</div>
