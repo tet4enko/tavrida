@@ -123,4 +123,20 @@ button {
 
 		background-color: #fbca0e;
 	}
+
+	&.gradient {
+		color: #fbca0e;
+
+		background: linear-gradient(180deg, #001c70 0%, #0c0047 100%);
+	}
+}
+
+.general-header {
+	font-family: GlebastaFontBig;
+
+	color: var(--main-header-color);
+
+	padding: 20px 0 60px 0;
+
+	font-size: 53px;
 }

@@ -6,7 +6,7 @@ function Order() {
 		<div className="Order section">
 			<div className="general-header">БЫСТРЫЙ СТАРТ С ТАВРИДА МЕДИА</div>
 			<div className="content">
-				<button>ОФОРМИТЬ ЗАЯВКУ</button>
+				<button className="gradient">ОФОРМИТЬ ЗАЯВКУ</button>
 			</div>
 		</div>
 	);

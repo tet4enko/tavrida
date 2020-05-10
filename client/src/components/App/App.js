@@ -12,6 +12,7 @@ import { component as Outdoor } from "./../pages/outdoor";
 import { component as Polygraphy } from "./../pages/polygraphy";
 import { component as Suvenirka } from "./../pages/suvenirka";
 import Cleaning from "./../pages/cleaning";
+import Smm from "./../pages/smm";
 
 function App() {
 	return (
@@ -33,6 +34,10 @@ function App() {
 					<Route path="/uslugi/cleaning">
 						<Header general={false} />
 						<Cleaning />
+					</Route>
+					<Route path="/uslugi/smm">
+						<Header general={false} />
+						<Smm />
 					</Route>
 					<Route path="/">
 						<Header general={true} />
