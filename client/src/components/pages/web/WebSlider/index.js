@@ -96,11 +96,11 @@ class WebSlider extends Component {
 									this.setState({
 										position: "start start-right"
 									});
-									// setTimeout(() => {
-									// 	this.setState({
-									// 		position: "normal"
-									// 	});
-									// }, 100);
+									setTimeout(() => {
+										this.setState({
+											position: "normal"
+										});
+									}, 100);
 								}}
 							>
 								ВЕРНУТЬСЯ
@@ -149,11 +149,11 @@ class WebSlider extends Component {
 									this.setState({
 										position: "start start-left"
 									});
-									// setTimeout(() => {
-									// 	this.setState({
-									// 		position: "normal"
-									// 	});
-									// }, 100);
+									setTimeout(() => {
+										this.setState({
+											position: "normal"
+										});
+									}, 100);
 								}}
 							>
 								ВЕРНУТЬСЯ
