@@ -13,6 +13,7 @@ import { component as Polygraphy } from "./../pages/polygraphy";
 import { component as Suvenirka } from "./../pages/suvenirka";
 import Cleaning from "./../pages/cleaning";
 import Smm from "./../pages/smm";
+import Web from "./../pages/web";
 
 function App() {
 	return (
@@ -38,6 +39,10 @@ function App() {
 					<Route path="/uslugi/smm">
 						<Header general={false} />
 						<Smm />
+					</Route>
+					<Route path="/uslugi/web">
+						<Header general={false} />
+						<Web />
 					</Route>
 					<Route path="/">
 						<Header general={true} />

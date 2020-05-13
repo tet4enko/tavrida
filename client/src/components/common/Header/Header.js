@@ -116,15 +116,15 @@ class Header extends Component {
 									<span className="point orange"></span>
 									Клининг рекламных конструкций
 								</a>
-								<a href="https:vk.com/" className="menu-item">
+								<a href="/uslugi/smm" className="menu-item">
 									<span className="point blue"></span>
 									Smm и таргетинг
 								</a>
-								<a href="https:vk.com/" className="menu-item">
+								<a href="/uslugi/web" className="menu-item">
 									<span className="point yellow"></span>
 									Разработка сайтов
 								</a>
-								<a href="https:vk.com/" className="menu-item">
+								<a href="/uslugi/design" className="menu-item">
 									<span className="point orange"></span>
 									Дизайн
 								</a>

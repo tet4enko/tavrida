@@ -16,6 +16,8 @@ import comp2 from "./pics/Комп2.png";
 import boy from "./pics/Пацык.png";
 import girl from "./pics/Телка.png";
 
+import CasesGrid from "./../../common/CasesGrid/CasesGrid.js";
+
 const cases = [{}, {}, {}, {}];
 
 const values = [
@@ -68,18 +70,7 @@ export default () => {
 			<img className="simple-pic" src={techs} />
 
 			<h2 className="main-header your-case">ВЫБЕРИ СВОЙ КЕЙС</h2>
-			<div className="cases-grid">
-				{cases.map(item => {
-					return (
-						<div className="case-item">
-							<div className="head"></div>
-							<button className="yellow price">
-								УЗНАТЬ ЦЕНУ
-							</button>
-						</div>
-					);
-				})}
-			</div>
+			<CasesGrid cases={cases} />
 			<div className="order-site">
 				<div className="left">
 					<div className="text">
