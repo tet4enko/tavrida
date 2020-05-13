@@ -231,19 +231,22 @@
 	}
 
 	&.start,
-	&.end {
+	&.end,
+	&.back {
 		.preview-content {
 			opacity: 0;
 		}
 	}
 
-	&.start {
+	&.start,
+	&.back {
 		.full-content {
 			opacity: 0;
 		}
 	}
 
-	&.start-left {
+	&.start-left,
+	&.back-left {
 		.left {
 			width: 25%;
 		}
@@ -253,13 +256,46 @@
 		}
 	}
 
-	&.start-right {
+	&.start-right,
+	&.back-right {
 		.left {
 			width: 75%;
 		}
 
 		.right {
 			width: 25%;
+		}
+	}
+
+	&.back-left {
+		.left {
+			.comp {
+				left: 13vw;
+				right: initial;
+			}
+		}
+
+		.right {
+			.comp {
+				right: 63vw;
+				left: inherit;
+			}
+		}
+	}
+
+	&.back-right {
+		.left {
+			.comp {
+				right: initial;
+				left: 63vw;
+			}
+		}
+
+		.right {
+			.comp {
+				left: initial;
+				right: 13vw;
+			}
 		}
 	}
 

@@ -11,12 +11,12 @@ import nonstopPic from "./pics/24на7.png";
 import balarsPic from "./pics/12.png";
 
 import techs from "./pics/Технологии.png";
-import comp2 from "./pics/Комп2.png";
 
 import boy from "./pics/Пацык.png";
 import girl from "./pics/Телка.png";
 
 import CasesGrid from "./../../common/CasesGrid/CasesGrid.js";
+import GetSite from "./../../common/GetSite/GetSite.js";
 
 const cases = [{}, {}, {}, {}];
 
@@ -71,19 +71,7 @@ export default () => {
 
 			<h2 className="main-header your-case">ВЫБЕРИ СВОЙ КЕЙС</h2>
 			<CasesGrid cases={cases} />
-			<div className="order-site">
-				<div className="left">
-					<div className="text">
-						<span className="top">ЗАКАЖИ САЙТ И ПОЛУЧИ</span>
-						<p className="bottom">
-							БЕСПЛАТНУЮ КОНСУЛЬТАЦИЮ ПО ЕГО ПРОДВИЖЕНИЮ ЧЕРЕЗ SMM
-							И МАРКЕТИНГ
-						</p>
-					</div>
-					<button className="blue get-site">ЗАКАЗАТЬ</button>
-				</div>
-				<img className="right" src={comp2} />
-			</div>
+			<GetSite />
 			<img className="boy" src={boy} />
 			<img className="girl" src={girl} />
 		</div>

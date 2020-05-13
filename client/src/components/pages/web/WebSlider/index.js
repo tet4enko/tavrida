@@ -94,13 +94,13 @@ class WebSlider extends Component {
 								className="btn blue back"
 								onClick={() => {
 									this.setState({
-										position: "start start-right"
+										position: "back back-right"
 									});
 									setTimeout(() => {
 										this.setState({
 											position: "normal"
 										});
-									}, 100);
+									}, 220);
 								}}
 							>
 								ВЕРНУТЬСЯ
@@ -147,20 +147,19 @@ class WebSlider extends Component {
 								className="btn yellow back"
 								onClick={() => {
 									this.setState({
-										position: "start start-left"
+										position: "back back-left"
 									});
 									setTimeout(() => {
 										this.setState({
 											position: "normal"
 										});
-									}, 100);
+									}, 220);
 								}}
 							>
 								ВЕРНУТЬСЯ
 							</button>
 							<button className="btn price">УЗНАТЬ ЦЕНУ</button>
 						</div>
-						{/* <button className="btn yellow back">ВЕРНУТЬСЯ</button> */}
 					</div>
 				</div>
 			</div>

@@ -11,6 +11,9 @@ export default props => {
 				return (
 					<div className="case-item">
 						<div className="head">
+							<span className="label">
+								{item.label && item.label.toUpperCase()}
+							</span>
 							<img src={picTM} className="tm" />
 						</div>
 						<button className="yellow price">УЗНАТЬ ЦЕНУ</button>
