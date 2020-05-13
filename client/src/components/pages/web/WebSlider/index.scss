@@ -102,6 +102,27 @@
 					}
 				}
 			}
+
+			.btns {
+				position: absolute;
+
+				top: 70%;
+
+				width: 62%;
+
+				text-align: center;
+
+				.btn {
+					width: 13vw;
+					height: 2.8vw;
+
+					font-size: 1.7vw;
+
+					border-radius: 0.5vw;
+
+					margin: 0 1vw;
+				}
+			}
 		}
 	}
 
@@ -144,6 +165,18 @@
 					margin-right: 2vw;
 				}
 			}
+
+			.btns {
+				left: 28%;
+
+				.price {
+					background: transparent;
+
+					color: var(--main-header-color);
+
+					border: 2px solid var(--main-header-color);
+				}
+			}
 		}
 	}
 
@@ -180,6 +213,18 @@
 
 				.item {
 					margin-left: 2vw;
+				}
+			}
+
+			.btns {
+				right: 28%;
+
+				.price {
+					background: transparent;
+
+					color: #fff;
+
+					border: 2px solid #fff;
 				}
 			}
 		}

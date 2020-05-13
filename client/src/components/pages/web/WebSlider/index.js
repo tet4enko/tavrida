@@ -27,7 +27,7 @@ const code = [
 			"Системный архитектор продумывет архитектуру сайта и учтывает все нюансы"
 	},
 	{
-		label: "2. Программирование сайта",
+		label: "2. Программирование",
 		desc:
 			"Программист свяжет компоненты  и модули в единый, четко отлаженный механизм"
 	},
@@ -88,7 +88,24 @@ class WebSlider extends Component {
 								</li>
 							))}
 						</ol>
-						{/* <button className="btn yellow back">ВЕРНУТЬСЯ</button> */}
+						<div className="btns">
+							<button className="btn price">УЗНАТЬ ЦЕНУ</button>
+							<button
+								className="btn blue back"
+								onClick={() => {
+									this.setState({
+										position: "start start-right"
+									});
+									// setTimeout(() => {
+									// 	this.setState({
+									// 		position: "normal"
+									// 	});
+									// }, 100);
+								}}
+							>
+								ВЕРНУТЬСЯ
+							</button>
+						</div>
 					</div>
 				</div>
 				<div className="right">
@@ -118,13 +135,31 @@ class WebSlider extends Component {
 							КОД
 						</span>
 						<ol className="items">
-							{design.map(item => (
+							{code.map(item => (
 								<li className="item">
 									<h6 className="label">{item.label}</h6>
 									<p className="desc">{item.desc}</p>
 								</li>
 							))}
 						</ol>
+						<div className="btns">
+							<button
+								className="btn yellow back"
+								onClick={() => {
+									this.setState({
+										position: "start start-left"
+									});
+									// setTimeout(() => {
+									// 	this.setState({
+									// 		position: "normal"
+									// 	});
+									// }, 100);
+								}}
+							>
+								ВЕРНУТЬСЯ
+							</button>
+							<button className="btn price">УЗНАТЬ ЦЕНУ</button>
+						</div>
 						{/* <button className="btn yellow back">ВЕРНУТЬСЯ</button> */}
 					</div>
 				</div>
