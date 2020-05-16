@@ -61,6 +61,12 @@
 
 			&.mail {
 				font-size: 18px;
+
+				text-align: left;
+
+				.txt {
+					font-size: 15px;
+				}
 			}
 
 			&.time {

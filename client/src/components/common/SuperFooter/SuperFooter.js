@@ -100,7 +100,8 @@ class SuperFooter extends Component {
 					<div className="col left colbottom mail">
 						<img src={mail} height={iconSize}></img>
 						<a target="_blank" href="mailto:tavrida.media@mail.ru">
-							tavrida.media@mail.ru
+							<span className="link">tavrida.media@mail.ru</span>
+							<div className="txt">Подписаться на рассылку</div>
 						</a>
 					</div>
 
@@ -110,7 +111,7 @@ class SuperFooter extends Component {
 					</div>
 
 					<div className="col right colbottom callback">
-						<button className="btn">ПЕРЕЗВОНИТЬ ВАМ?</button>
+						<button className="btn">ПЕРЕЗВОНИТЕ МНЕ</button>
 					</div>
 
 					<div className="social" id="social-links">

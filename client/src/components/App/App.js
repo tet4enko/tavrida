@@ -14,6 +14,7 @@ import { component as Suvenirka } from "./../pages/suvenirka";
 import Cleaning from "./../pages/cleaning";
 import Smm from "./../pages/smm";
 import Web from "./../pages/web";
+import Design from "./../pages/design";
 
 function App() {
 	return (
@@ -43,6 +44,10 @@ function App() {
 					<Route path="/uslugi/web">
 						<Header general={false} />
 						<Web />
+					</Route>
+					<Route path="/uslugi/design">
+						<Header general={false} />
+						<Design />
 					</Route>
 					<Route path="/">
 						<Header general={true} />

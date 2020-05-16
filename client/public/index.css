@@ -17,3 +17,8 @@
 	font-family: "GlebastaBetina";
 	src: url(./fonts/12003.otf) format("opentype");
 }
+
+@font-face {
+	font-family: "GlebastaDays";
+	src: url(./fonts/Days.otf) format("opentype");
+}

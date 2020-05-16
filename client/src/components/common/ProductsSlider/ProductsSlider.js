@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import "./ProductsSlider.scss";
 
-import Toggle from "./../../../common/Toggle";
+import Toggle from "./../Toggle";
 
-import { services as outdoorServices } from "./../../outdoor";
-import { services as polygraphyServices } from "./../../polygraphy";
-import { services as suvenirkaServices } from "./../../suvenirka";
+import { services as outdoorServices } from "./../../pages/outdoor";
+import { services as polygraphyServices } from "./../../pages/polygraphy";
+import { services as suvenirkaServices } from "./../../pages/suvenirka";
 
 const services = [];
 
@@ -82,10 +82,9 @@ class ProductsSlider extends Component {
 
 		return (
 			<div className="ProductsSlider section">
-				<div className="general-header">УЗНАЙ О РЕКЛАМЕ БОЛЬШЕ</div>
+				<div className="general-header">{this.props.label || ""}</div>
 				<div className="services">
 					{services.map((service, index) => {
-						// console.log(self.getLeft(index, 2));
 						let cls = "";
 						if (state === self.getLeft(index, 2)) {
 							cls = "postright visible";
@@ -106,7 +105,14 @@ class ProductsSlider extends Component {
 						return (
 							<div className={`service ${cls}`}>
 								<img src={service.pic}></img>
-								<span className="name">
+								<span
+									className="name"
+									style={{
+										color:
+											this.props.textColor ||
+											"var(--main-header-color)"
+									}}
+								>
 									{service.name.toUpperCase()}
 								</span>
 							</div>
