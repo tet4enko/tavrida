@@ -3,7 +3,9 @@ import React from "react";
 import "./index.scss";
 
 import big from "./pics/Шапка.png";
-import comp from "./pics/Комп.png";
+import comp1 from "./pics/С1.png";
+import comp2 from "./pics/С2.png";
+import comp3 from "./pics/С3.png";
 
 import opitPic from "./pics/3+.png";
 import prjsPic from "./pics/50.png";
@@ -19,6 +21,8 @@ import CasesGrid from "./../../common/CasesGrid/CasesGrid.js";
 import GetSite from "./../../common/GetSite/GetSite.js";
 
 const cases = [{}, {}, {}, {}];
+
+const comps = [comp1, comp2, comp3];
 
 const values = [
 	{
@@ -40,6 +44,27 @@ const values = [
 ];
 
 export default () => {
+	const [compsIndex, setCompsIndex] = React.useState(0);
+
+	const getNextIndex = index_ => {
+		let result;
+
+		result = index_ + 1;
+		if (result >= comps.length) {
+			result = 0;
+		}
+
+		return result;
+	};
+
+	const toggle = () => {
+		setCompsIndex(getNextIndex(compsIndex));
+	};
+
+	React.useEffect(() => {
+		setTimeout(toggle, 4000);
+	}, [compsIndex]);
+
 	return (
 		<div className="FuckingSmm">
 			<img className="big" src={big} />
@@ -52,7 +77,16 @@ export default () => {
 				<button className="gradient case">ВЫБРАТЬ СВОЙ КЕЙС</button>
 			</div>
 			<h2 className="main-header">ЧТО МЫ МОЖЕМ СДЕЛАТЬ ДЛЯ ВАС</h2>
-			<img className="simple-pic" src={comp} />
+			<div className="comps">
+				{comps.map((comp, index) => (
+					<img
+						className={`simple-pic comp ${
+							index === compsIndex ? "visible" : ""
+						}`}
+						src={comps[index]}
+					/>
+				))}
+			</div>
 			<div className="values">
 				<h2 className="label">ЦИФРЫ СКАЖУТ ВСЕ ЗА НАС</h2>
 				<div className="items">

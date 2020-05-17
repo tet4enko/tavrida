@@ -48,6 +48,16 @@
 		}
 	}
 
+	.comps {
+		.comp {
+			display: none;
+
+			&.visible {
+				display: initial;
+			}
+		}
+	}
+
 	.case {
 		position: relative;
 		left: 15vw;
@@ -147,12 +157,20 @@
 
 		z-index: 1;
 	}
+
+	.GetSite {
+		margin-bottom: 11vw;
+	}
 }
 
 @media screen and (max-width: 1200px) {
 	.FuckingSmm {
 		.big {
 			width: 1200px;
+		}
+
+		.GetSite {
+			margin-bottom: 132px;
 		}
 
 		.header {

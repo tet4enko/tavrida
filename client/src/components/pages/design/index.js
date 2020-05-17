@@ -21,7 +21,7 @@ import articles2 from "./pics/Статьи2.png";
 import approach from "./pics/Подход.png";
 import approach2 from "./pics/Подход2.png";
 
-import ProductsSlider from "./../../common/ProductsSlider/ProductsSlider.js";
+import ClientsGrid from "./../../common/ClientsGrid/ClientsGrid.js";
 
 const uslugi = [
 	{
@@ -117,8 +117,7 @@ export default () => {
 					</li>
 				))}
 			</ol>
-			<h2 className="projects">НАШИ ПРОЕКТЫ</h2>
-			<ProductsSlider textColor="#fff" />
+			<ClientsGrid textColor="#fff" />
 			<div className="your">
 				<h2 className="your-design">А КАКИМ БУДЕТ ТВОЙ ДИЗАЙН?</h2>
 				<div className="btns">

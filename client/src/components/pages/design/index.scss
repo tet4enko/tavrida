@@ -29,14 +29,16 @@
 			text-align: left;
 
 			font-family: GlebastaDays;
-			font-size: 6vw;
+			font-size: 7vw;
 		}
 
 		.bottom {
 			text-align: right;
 
 			font-family: GlebastaFontBig;
-			font-size: 2.5vw;
+			font-size: 2.2vw;
+
+			letter-spacing: 1.5px;
 		}
 	}
 
@@ -253,40 +255,33 @@
 		}
 	}
 
-	.projects {
+	.ClientsGrid {
 		position: absolute;
 
-		z-index: 1;
-
-		top: 104vw;
+		top: 97vw;
 		left: 0;
 		right: 0;
 
-		margin: auto;
-
-		font-family: GlebastaDays;
-
-		color: #fff;
-
-		font-size: 3.5vw;
-	}
-
-	.ProductsSlider {
-		position: absolute;
-
-		top: 107vw;
-		left: 0;
-		right: 0;
+		width: 42vw;
+		min-width: initial;
 
 		margin: auto;
 
 		z-index: 1;
+
+		.general-header {
+			font-family: GlebastaDays;
+
+			color: #fff;
+
+			font-size: 3.5vw;
+		}
 	}
 
 	.your {
 		position: absolute;
 
-		top: 134vw;
+		top: 131vw;
 		left: 15vw;
 
 		color: #fff;
@@ -320,11 +315,11 @@
 			width: 516px;
 
 			.top {
-				font-size: 72px;
+				font-size: 84px;
 			}
 
 			.bottom {
-				font-size: 30px;
+				font-size: 26.4px;
 			}
 		}
 
@@ -458,18 +453,14 @@
 			}
 		}
 
-		.projects {
-			top: 1248px;
+		.ClientsGrid {
+			top: 1164px;
 
-			font-size: 42px;
-		}
-
-		.ProductsSlider {
-			top: 1284px;
+			width: 504px;
 		}
 
 		.your {
-			top: 1608px;
+			top: 1572px;
 			left: 180px;
 
 			.your-design {
